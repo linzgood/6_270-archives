@@ -1,0 +1,24 @@
+syntax on
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set number
+set autoindent
+set smartindent
+
+" make the filename show up at the bottom
+set modeline
+set ls=2
+
+" tab management
+map <C-t> :tabe 
+imap <C-t> <Esc>:tabe<Space>
+
+map <F5> :tabprevious<CR>
+imap <F5> <Esc>:tabprevious<CR>
+
+map <F6> :tabnext<CR>
+imap <F6> <Esc>:tabnext<CR>
+
+" auto-reload vimrc on save
+au! BufWritePost .vimrc source %

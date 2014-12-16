@@ -1,0 +1,2 @@
+./run_vision.sh 0 /dev/tty.usbserial.A901B1I4 A /dev/tty.usbserial.A901B1I7
+
